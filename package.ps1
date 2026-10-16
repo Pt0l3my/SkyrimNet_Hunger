@@ -2,7 +2,8 @@ $ErrorActionPreference = 'Stop'
 
 $ModRoot = $PSScriptRoot
 $ModName = Split-Path -Leaf $ModRoot
-$ZipPath = Join-Path (Split-Path -Parent $ModRoot) "$ModName.zip"
+$Version = (Get-Content (Join-Path $ModRoot 'VERSION') -Raw).Trim()
+$ZipPath = Join-Path (Split-Path -Parent $ModRoot) "$ModName-$Version.zip"
 
 $Exclude = @('.claude', '.vscode', '.mcp.json', '.git', '.gitignore', '.gitattributes', 'package.ps1', 'SkyrimSE.code-workspace', 'skyrimse.ppj')
 

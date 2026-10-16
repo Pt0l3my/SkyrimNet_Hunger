@@ -8,7 +8,7 @@
   "tags": ["dialogue"],
   "nsfw": false,
   "icon": "package",
-  "version": "1.4.1",
+  "version": "1.5.1",
   "min_skyrimnet_version": "0.25.0",
   "mods": [
     { "name": "SkyrimNet Hunger", "file": "SkyrimNet_Hunger.esp", "required": true }
